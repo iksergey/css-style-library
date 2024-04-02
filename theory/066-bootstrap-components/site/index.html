@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ru" data-bs-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мой сайт</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/main.css">
+    <script src="./scripts/scripts.js"></script>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                     class="bi bi-briefcase-fill" viewBox="0 0 16 16">
+                    <path
+                          d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v1.384l7.614 2.03a1.5 1.5 0 0 0 .772 0L16 5.884V4.5A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5" />
+                    <path
+                          d="M0 12.5A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5V6.85L8.129 8.947a.5.5 0 0 1-.258 0L0 6.85z" />
+                </svg>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <button id="theme-toggle-btn" class="nav-link  " onclick="toggleTheme()">
+                            🌙
+                        </button>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">На главную</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Дополнительно</a>
+                    </li>
+
+
+
+                </ul>
+
+            </div>
+
+        </div>
+    </nav>
+
+    <div class="px-4 py-1 my-1 text-center">
+        <h1 class="display-1 fw-bold text-body">Обо мне</h1>
+
+        <div class="col-lg-6 mx-auto">
+            <p class="lead mb-4">
+                Привет! Я Джарвис, и я — виртуальный архитектор кода, путешествующий по просторам цифрового мира. С
+                самого детства меня увлекала технология и всё, что связано с компьютерами. Играясь с первыми программами
+                на стареньком компьютере своего отца, я почувствовал, что мое призвание — в мире программирования.
+            </p>
+
+        </div>
+        <div>
+            <img src="./assets/img-01.png" class="col-6 rounded" alt="">
+
+        </div>
+
+    </div>
+
+    <!-- py-5 https://getbootstrap.com/docs/5.3/utilities/spacing/ -->
+    <div id="portfolio" class="py-5">
+        <div class="container">
+            <h2 class="display-4">Портфолио</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="./assets/img-02.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-uppercase">Разработка приложения</h5>
+                            <p class="card-text ">
+                                Руководил командой разработчиков при создании уникального приложения,
+                                которое помогает людям эффективно управлять своим временем и повышать
+                                производительность. Приложение получило широкое признание в индустрии и было отмечено
+                                множеством наград за инновационность и практичность.
+                            </p>
+                            <a href="#" class="btn btn-primary">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="./assets/img-03.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-uppercase">Победа на хакатоне</h5>
+                            <p class="card-text ">Представил свою команду на престижном хакатоне, где им удалось
+                                разработать и реализовать революционный проект в области искусственного интеллекта. Их
+                                решение было отмечено жюри как наиболее перспективное и технологичное, что принесло им
+                                победу и признание экспертов.</p>
+                            <a href="#" class="btn btn-primary">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="./assets/img-04.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-uppercase">Публикация научной статьи</h5>
+                            <p class="card-text ">
+                                Является автором научной статьи, опубликованной в ведущем журнале по информационным
+                                технологиям. В своем исследовании он представил новый метод оптимизации алгоритмов
+                                машинного обучения, который привлек внимание специалистов со всего мира.
+                            </p>
+                            <a href="#" class="btn btn-primary">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-12">
+                <div id="carouselExample" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./assets/img-05.png" class="d-block w-100"
+                                 alt="">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./assets/img-06.png" class="d-block w-100"
+                                 alt="">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./assets/img-07.png" class="d-block w-100"
+                                 alt="">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                            data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                            data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="px-4 py-1 my-1 text-right">
+                <!-- display-5 https://getbootstrap.com/docs/5.3/content/typography/ -->
+                <h1 class="display-1 fw-bold text-body">Контакты</h1>
+                <div class="col-md-12 mx-auto">
+                    <p class="lead mb-4">
+                    <ul>
+                        <li>E-mail: <a href="mailto:i@ksergey.ru">написать</a></li>
+                        <li>Сайт <a href="http://ksergey.ru">перейти</a></li>
+                    </ul>
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="text-center py-4">
+        <div class="container">
+            <p>Все материалы, размещенные на этом сайте, предоставляются на условиях лицензии Creative Commons Zero
+                (CC0), если не указано иное. <a
+                   href="https://creativecommons.org/publicdomain/zero/1.0/deed.ru">подробнее</a>.
+            </p>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>

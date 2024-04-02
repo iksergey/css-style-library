@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Justify Content</title>
+    <style>
+        .flex-container {
+            display: flex;
+            /* flex-direction: column; */
+            /* (по умолчанию) Элементы выравниваются в начале контейнера. */
+            /* justify-content: flex-start; */
+            /* Элементы выравниваются в конце контейнера. */
+            /* justify-content: flex-end; */
+            /* Элементы выравниваются по центру контейнера. */
+            /* justify-content: center; */
+            /* Элементы распределяются равномерно по контейнеру, с равным пространством между ними. */
+            /* justify-content: space-between; */
+            /* Элементы распределяются равномерно по контейнеру, с равным пространством вокруг них. */
+            /* justify-content: space-around; */
+            /* Элементы распределяются равномерно по контейнеру, с равным пространством вокруг и между ними. */
+            /* justify-content: space-evenly; */
+            height: 200px;
+            border: 2px solid #3498db;
+        }
+
+        .flex-item {
+            width: 50px;
+            height: 50px;
+            background-color: #3498db;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="flex-container">
+        <div class="flex-item">1</div>
+        <div class="flex-item">2</div>
+        <div class="flex-item">3</div>
+    </div>
+
+</body>
+
+</html>

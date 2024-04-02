@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Простое объединение (пробел) */
+        div p {
+            color: blue;
+        }
+
+        /* Общий селектор (,) */
+        h2,
+        p {
+            font-style: italic;
+        }
+
+        /* Дочерний селектор (>) */
+        article>p {
+            font-weight: bold;
+        }
+    </style>
+    <title>Пример комбинирования селекторов</title>
+</head>
+
+<body>
+
+    <div>
+        <h1>Заголовок 1</h1>
+        <p>Этот параграф находится внутри div и будет окрашен в синий цвет.</p>
+    </div>
+    <h2>Заголовок 2</h2>
+    <p>Этот параграф будет иметь курсивный шрифт, так как он соответствует общему селектору для h2 и p.</p>
+
+    <article>
+        <h2>Статья</h2>
+        <p>Этот параграф находится внутри article и будет иметь жирный шрифт, так как соответствует дочернему селектору
+            для article > p.</p>
+    </article>
+
+</body>
+
+</html>

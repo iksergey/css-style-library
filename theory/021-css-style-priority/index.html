@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Style Priority</title>
+    <style type="text/css">
+        .class-name p {
+            color: blue;
+            font-size: 20px;
+        }
+
+        .class-name+p {
+            color: yellow;
+            font-size: 20px;
+        }
+
+        p {
+            color: red;
+            font-size: 24px;
+        }
+    </style>
+</head>
+
+<body>
+    <p>Этот текст красного цвета и имеет размер шрифта 24px, так как он не находится внутри элемента с классом
+        .class-name.</p>
+
+    <p>Этот текст красного цвета и имеет размер шрифта 24px, так как он не находится внутри элемента с классом
+        .class-name.</p>
+
+    <div class="class-name">
+        <p>Этот текст синего цвета и имеет размер шрифта 20px, потому что он находится внутри элемента с классом
+            .class-name.</p>
+        <p>Этот текст синего цвета и имеет размер шрифта 20px, потому что он находится внутри элемента с классом
+            .class-name.</p>
+
+    </div>
+
+    <p> Жёлтый текст</p>
+
+
+    <p>Этот текст синего цвета и имеет размер шрифта 20px, потому что он находится внутри элемента с классом
+        .class-name.</p>
+
+</body>
+
+</html>

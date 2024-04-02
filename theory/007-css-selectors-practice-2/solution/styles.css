@@ -1,0 +1,29 @@
+#red {
+    color: red;
+}
+
+#blue {
+    color: blue;
+}
+
+#orange {
+    color: orange;
+}
+
+#darkblue {
+    color: darkblue;
+}
+
+#brown {
+    color: brown;
+}
+
+h1,
+h2 {
+    font-style: italic;
+}
+
+img {
+    height: 50px;
+    width: 150px;
+}

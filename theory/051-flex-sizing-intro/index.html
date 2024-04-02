@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Width</title>
+    <style>
+        .flex-container {
+            display: flex;
+            background: lightgrey;
+            padding: 10px;
+        }
+
+        .flex-item {
+            height: 100px;
+            color: white;
+            font-size: 20px;
+            text-align: center;
+            line-height: 100px;
+        }
+
+        .flex-basis-item {
+            flex-basis: 200px;
+            background: steelblue;
+        }
+
+        .width-item {
+            /* width: 250px; */
+            /* Игнорируется, так как flex-basis установлен */
+            flex-basis: 100px;
+            background: tomato;
+        }
+
+        .min-max-width-item {
+            flex-basis: 50px;
+            /* min-width и max-width имеют приоритет над этим */
+            min-width: 100px;
+            max-width: 150px;
+            background: seagreen;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="flex-container">
+        <div class="flex-item width-item">Width</div>
+        <div class="flex-item flex-basis-item">Flex-Basis</div>
+        <div class="flex-item width-item">Width</div>
+        <div class="flex-item min-max-width-item">Min-Max</div>
+        <div class="flex-item width-item">Width</div>
+    </div>
+
+    <hr />
+    <div class="flex-container">
+        <p class="">Width</p>
+        <p class="">Flex-Basis</p>
+        <p class="">Width</p>
+        <p class="">Min-Max Width</p>
+        <p class="">Width</p>
+    </div>
+
+</body>
+
+</html>

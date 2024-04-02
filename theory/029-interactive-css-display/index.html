@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Пример изменения display</title>
+    <script src="./scripts.js"></script>
+    <style>
+        .rectangle {
+            width: 100px;
+            height: 50px;
+            margin: 10px;
+            padding: 10px;
+            background-color: #3498db;
+            transition: width 0.5s;
+        }
+    </style>
+</head>
+
+<body>
+    <p>
+
+        <button onclick="changeDisplay('block')">display: block</button>
+        <button onclick="changeDisplay('inline')">display: inline</button>
+        <button onclick="changeDisplay('inline-block')">display: inline-block</button>
+        <button onclick="changeDisplay('none')">display: none</button>
+        <button onclick="changeWidth('100px')">width: 100px</button>
+        <button onclick="changeWidth('400px')">width: 400px</button>
+    </p>
+    <div class="rectangle" id="rectangle1">
+        1
+    </div>
+    ТЕСТ
+    <div class="rectangle" id="rectangle2">
+        2
+    </div>
+</body>
+
+</html>

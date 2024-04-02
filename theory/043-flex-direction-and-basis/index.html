@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Demo</title>
+    <style>
+        .flex-container {
+            display: flex;
+            /*  */
+
+            flex-direction: row;
+            /*  */
+            border: 2px solid #3498db;
+            padding: 10px;
+        }
+
+        .flex-item {
+            background-color: #3498db;
+            font-size: 30px;
+            color: #fff;
+            text-align: center;
+            margin: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flex-container">
+        <p class="flex-item">Далеко-далеко&nbsp;за&nbsp;словесными горами в стране гласных и согласных живут рыбные
+            тексты.
+        </p>
+        <p class="flex-item">2</p>
+        <p class="flex-item">3</p>
+        <p class="flex-item">4</p>
+        <p class="flex-item">5</p>
+    </div>
+</body>
+
+</html>

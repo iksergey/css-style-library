@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: rgb(143, 143, 143);
+        }
+
+        .rectangle {
+            /* Ширина: 200px. */
+            width: 200px;
+            /* Высота: 100px. */
+            height: 100px;
+            /* Цвет фона: синий. */
+            background-color: blue;
+            /* Позиционирование: абсолютное. */
+            position: absolute;
+            /* Размещение по центру экрана. */
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .circle {
+            /* Ширина: 80px. */
+            width: 80px;
+            /* Высота: 80px. */
+            height: 80px;
+            /* Цвет фона: аква. */
+            background-color: aqua;
+            /* Радиус скругления: 50% (чтобы создать круг). */
+            border-radius: 50%;
+            position: absolute;
+            /* Размещение по центру экрана. */
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+
+    <title>Прямоугольник и круг</title>
+</head>
+
+<body>
+
+    <div class="rectangle"></div>
+    <div class="circle"></div>
+</body>
+
+</html>

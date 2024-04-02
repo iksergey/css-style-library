@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Пример Flex Grow и Shrink</title>
+    <style>
+        /* Стили для flex-контейнера */
+        .flex-container {
+            display: flex;
+            /* Активация Flexbox для контейнера */
+            width: 100%;
+            /* Ширина контейнера */
+            background-color: lightgrey;
+            /* Цвет фона контейнера */
+        }
+
+        /* Общие стили для flex-элементов */
+        .flex-item {
+            width: 100px;
+            /* Начальная ширина элементов */
+            height: 100px;
+            /* Высота элементов */
+            margin: 10px;
+            /* Внешний отступ элементов */
+            text-align: center;
+            /* Выравнивание текста по центру */
+            line-height: 100px;
+            /* Высота строки для вертикального выравнивания текста */
+            color: white;
+            /* Цвет текста */
+        }
+
+        /* Стили для элемента, который будет увеличиваться */
+        .flex-item-grow {
+            background-color: steelblue;
+            /* Цвет фона элемента */
+            flex-grow: 1;
+            /* Элемент будет расти, чтобы занять дополнительное пространство, если оно есть */
+        }
+
+        /* Стили для элемента, который будет уменьшаться */
+        .flex-item-shrink {
+            background-color: tomato;
+            /* Цвет фона элемента */
+            /* flex-shrink: 1; */
+            /* flex-basis: 200px; */
+            flex-grow: 2;
+            /* Элемент будет уменьшаться, если пространство ограничено */
+            /* Начальный размер элемента до увеличения или уменьшения */
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="flex-container">
+        <div class="flex-item flex-item-grow">Первый</div>
+        <div class="flex-item flex-item-shrink">Второй</div>
+    </div>
+
+</body>
+
+</html>

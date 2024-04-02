@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Align Content Example</title>
+    <style>
+        .flex-container {
+            display: flex;
+            flex-wrap: wrap;
+            height: 70vh;
+            border: 2px solid #3498db;
+            /* (По умолчанию) Контент растягивается, чтобы занять всё доступное пространство по поперечной оси контейнера. */
+            /* align-content: stretch; */
+            /* Контент выравнивается в начале контейнера. */
+            /* align-content: flex-start; */
+            /* Контент выравнивается в конце контейнера. */
+            /* align-content: flex-end; */
+            /* Контент выравнивается по центру контейнера. */
+            /* align-content: center; */
+            /* Контент распределяется равномерно по контейнеру с равным пространством между элементами. */
+            /* align-content: space-between; */
+            /* Контент распределяется равномерно по контейнеру с равным пространством вокруг элементов. */
+            /* align-content: space-around; */
+            /* Контент распределяется равномерно по контейнеру с равным пространством как вокруг элементов, так и между ними. */
+            /* align-content: space-evenly; */
+        }
+
+        .flex-item {
+            width: 50px;
+            height: 50px;
+            background-color: #3498db;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+            font-weight: bold;
+            margin: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="flex-container">
+        <div class="flex-item">1</div>
+        <div class="flex-item">2</div>
+        <div class="flex-item">3</div>
+        <div class="flex-item">4</div>
+        <div class="flex-item">5</div>
+        <div class="flex-item">6</div>
+        <div class="flex-item">7</div>
+        <div class="flex-item">8</div>
+        <div class="flex-item">9</div>
+        <div class="flex-item">10</div>
+    </div>
+
+</body>
+
+</html>

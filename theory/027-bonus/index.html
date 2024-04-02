@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Радуга</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background-color: #87CEEB;
+            /* Голубой цвет фона */
+        }
+
+        .rainbow {
+            width: 300px;
+            height: 300px;
+            background: conic-gradient(#FF0000 0% 10%,
+                    #FF7F00 10% 20%,
+                    #FFFF00 20% 30%,
+                    #00FF00 30% 40%,
+                    #0000FF 40% 50%,
+                    #4B0082 50% 60%,
+                    #8B00FF 60% 70%,
+                    #9400D3 70% 80%,
+                    #FF00FF 80% 90%,
+                    #FF1493 90% 100%);
+            border-radius: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="rainbow"></div>
+</body>
+
+</html>

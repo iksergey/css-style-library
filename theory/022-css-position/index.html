@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Несколько квадратов с position: relative</title>
+    <style>
+        header {
+            padding: 10px 0px;
+            text-align: right;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        div {
+            border: 1px dashed;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            text-align: center;
+            text-decoration: none;
+            cursor: pointer;
+            border: 2px solid #3498db;
+            color: #3498db;
+            background-color: #ffffff;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        button:hover {
+            background-color: #3498db;
+            color: #ffffff;
+        }
+
+        .div-scroll {
+            height: 1000px;
+            background-color: beige;
+        }
+
+        .relative-container {
+            top: 0px;
+            left: 0px;
+            position: relative;
+            background-color: #3498db;
+        }
+
+        .first-rectangle,
+        .second-rectangle,
+        .third-rectangle {
+            width: 200px;
+            height: 100px;
+            position: relative;
+        }
+
+        .first-rectangle {
+            background-color: white;
+            top: 0px;
+            left: 0px;
+        }
+
+        .second-rectangle {
+            background-color: blue;
+            top: 30px;
+            left: 20px;
+        }
+
+        .third-rectangle {
+            background-color: red;
+            top: 60px;
+            left: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <ul>
+            <li><button onclick="changePosition('static')">Static Position</button></li>
+            <li><button onclick="changePosition('relative')">Relative Position</button></li>
+            <li><button onclick="changePosition('absolute')">Absolute Position</button></li>
+            <li><button onclick="changePosition('fixed')">Fixed Position</button></li>
+        </ul>
+    </header>
+
+    <div class="relative-container">
+        <div class="first-rectangle" id="firstRectangle"></div>
+        <div class="second-rectangle" id="secondRectangle"></div>
+        <div class="third-rectangle" id="thirdRectangle"></div>
+    </div>
+
+    <div class="div-scroll"></div>
+
+    <script>
+        function changePosition(position) {
+            var rectangles = document.querySelectorAll('.first-rectangle, .second-rectangle, .third-rectangle');
+
+            rectangles.forEach(function (rectangle) {
+                rectangle.style.position = position;
+            });
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,266 @@
+body {
+  background: #ccc;
+  font-family: Verdana Geneva, Tahoma, sans-serif;
+  font-size: 19px;
+  line-height: 1.5;
+}
+
+.container {
+  width: 150px;
+  height: 150px;
+  margin: 15px;
+  display: inline-block;
+}
+
+.box {
+  width: 600px;
+  overflow: scroll;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+:root {
+  --red-color: #ff0000;
+  --blue-color: #0000ff;
+  --white-color: #ffffff;
+  --green-color: #00ff00;
+}
+
+.element1 {
+  background: linear-gradient(to right,
+      var(--red-color),
+      var(--blue-color));
+}
+
+.element21 {
+  background: linear-gradient(to bottom,
+      var(--red-color),
+      var(--blue-color));
+}
+
+.element22 {
+  background: linear-gradient(to top,
+      var(--red-color),
+      var(--blue-color));
+}
+
+.element31 {
+  background: linear-gradient(to left,
+      var(--white-color),
+      var(--blue-color),
+      var(--red-color));
+}
+
+.element32 {
+  background: linear-gradient(to right,
+      var(--white-color),
+      var(--blue-color),
+      var(--red-color));
+}
+
+.element41 {
+  background: linear-gradient(to right top,
+      var(--white-color),
+      var(--blue-color),
+      var(--red-color));
+}
+
+.element42 {
+  background: linear-gradient(to left top,
+      var(--white-color),
+      var(--blue-color),
+      var(--red-color));
+}
+
+.element43 {
+  background: linear-gradient(to right bottom,
+      var(--white-color),
+      var(--blue-color),
+      var(--red-color));
+}
+
+.element5 {
+  background: radial-gradient(circle,
+      var(--red-color),
+      var(--green-color));
+}
+
+.element6 {
+  background: repeating-linear-gradient(to right,
+      var(--red-color),
+      var(--green-color) 40px);
+}
+
+.element71 {
+  background: repeating-radial-gradient(circle,
+      var(--red-color),
+      var(--green-color) 40px);
+}
+
+.element72 {
+  background: repeating-radial-gradient(circle,
+      var(--red-color) 0%,
+      var(--red-color) 25%,
+      var(--green-color) 25%,
+      var(--green-color) 50%);
+}
+
+.element73 {
+  background: repeating-radial-gradient(circle,
+      var(--red-color) 0%,
+      var(--red-color) 25%,
+      var(--green-color) 25%,
+      var(--green-color) 50%,
+      var(--blue-color) 50%,
+      var(--blue-color) 75%);
+}
+
+.element74 {
+  background: repeating-radial-gradient(circle,
+      var(--red-color) 0%,
+      var(--red-color) 10%,
+      var(--green-color) 10%,
+      var(--green-color) 20%,
+      var(--blue-color) 20%,
+      var(--blue-color) 30%);
+}
+
+.element81 {
+  background: linear-gradient(to right,
+      var(--red-color) 50%,
+      var(--blue-color) 50%);
+}
+
+.element82 {
+  background: repeating-linear-gradient(to right,
+      var(--red-color),
+      var(--red-color) 10px,
+      var(--blue-color) 10px,
+      var(--blue-color) 40px);
+}
+
+.element83 {
+
+  background: repeating-linear-gradient(to right,
+      var(--red-color),
+      var(--red-color) 25%,
+      var(--blue-color) 25%,
+      var(--blue-color) 50%);
+}
+
+.element91 {
+  background: linear-gradient(to bottom,
+      var(--white-color) 25%,
+      var(--blue-color) 50%,
+      var(--red-color) 75%);
+}
+
+.element92 {
+  background: linear-gradient(to bottom,
+      var(--white-color) 33%,
+      var(--blue-color) 33%,
+      var(--blue-color) 66%,
+      var(--red-color) 66%);
+}
+
+.element93 {
+  background: linear-gradient(to bottom,
+      var(--white-color) 25%,
+      var(--blue-color) 25%,
+      var(--blue-color) 50%,
+      var(--red-color) 50%,
+      var(--red-color) 75%,
+      var(--white-color) 75%,
+      var(--white-color) 100%);
+}
+
+.element101 {
+  background: linear-gradient(-25deg,
+      var(--white-color) 25%,
+      var(--blue-color) 25%,
+      var(--blue-color) 50%,
+      var(--red-color) 50%,
+      var(--red-color) 75%,
+      var(--white-color) 75%,
+      var(--white-color) 100%);
+}
+
+/* магия */
+.element11 {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  transform: rotate(-45deg);
+  background-color: var(--red-color);
+  margin: 50px;
+}
+
+.element11::before,
+.element11::after {
+  content: "";
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  background-color: var(--red-color);
+}
+
+.element11::before {
+  border-radius: 100px 100px 0 0;
+  top: -50px;
+  left: 0;
+}
+
+.element11::after {
+  border-radius: 100px 100px 100px 0;
+  top: 0;
+  left: 50px;
+}
+
+/* Ещё магия  */
+
+@keyframes pulse {
+  0% {
+    transform: rotate(-45deg) scale(1);
+  }
+
+  50% {
+    transform: rotate(-45deg) scale(1.1);
+  }
+
+  100% {
+    transform: rotate(-45deg) scale(1);
+  }
+}
+
+.element12 {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  transform: rotate(45deg);
+  background-color: var(--red-color);
+  margin: 50px;
+  animation: pulse 2s infinite;
+}
+
+.element12::before,
+.element12::after {
+  content: "";
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  background-color: var(--red-color);
+}
+
+.element12::before {
+  border-radius: 100px 100px 0 0;
+  top: -50px;
+  left: 0;
+}
+
+.element12::after {
+  border-radius: 100px 100px 100px 0;
+  top: 0;
+  left: 50px;
+}

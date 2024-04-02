@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        html {
+            font-size: 60px;
+        }
+
+        body {
+            font-size: 40px;
+            padding: 0;
+            margin: 0;
+            /* display: flex; */
+            /* justify-content: center; */
+            /* align-items: center; */
+            /* height: 100vh; */
+        }
+
+        .grid-container {
+            display: grid;
+
+            /* grid-template-rows: 100px 80px; */
+            /* grid-template-columns: 60px 60px 100px; */
+            /* grid-template: 100px 80px / 60px 60px 100px; */
+
+            /* grid-template-rows: 20% 40% 30%; */
+            /* grid-template-columns: 20% 80%; */
+            /* grid-template: 20% 40% 30% / 20% 80%; */
+
+            /* grid-template-rows: 1fr 2fr 3fr; */
+            /* grid-template-columns: 2fr 3fr; */
+            /* grid-template: 1fr 2fr 3fr / 2fr 3fr; */
+
+            /* grid-template-rows: 1em 2em; */
+            /* grid-template-columns: 3em 4em; */
+            /* grid-template: 1em 2em / 3em 4em; */
+
+            /* grid-template-rows: 1rem 2rem; */
+            /* grid-template-columns: 3rem 4rem; */
+            /* grid-template: 1rem 2rem / 3rem 4rem; */
+
+            /* grid-template-rows: 1em auto; */
+            /* height: 98vh; */
+            /* grid-template-columns: 3em auto; */
+            margin: 10px;
+            /* grid-template-rows: 100px 150px; */
+            /* grid-template-columns: 100px minmax(250px, 400px); */
+
+            grid-template-rows: repeat(2, 60px);
+            grid-template-columns: repeat(3, minmax(80px, 100px));
+            grid-auto-rows: 50px;
+
+            grid-gap: 10px;
+        }
+
+        .grid-item {
+            display: flex;
+            background-color: #ccc;
+            border: 1px solid #000;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+        }
+    </style>
+    <title>Размеры grid</title>
+</head>
+
+<body>
+    <div class="grid-container">
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item">6</div>
+        <div class="grid-item">7</div>
+        <div class="grid-item">🥲</div>
+        <div class="grid-item">🥲</div>
+        <div class="grid-item">🥲</div>
+        <div class="grid-item">🥲</div>
+        <div class="grid-item">🥲</div>
+        <div class="grid-item">🥲</div>
+        <div class="grid-item">🥲</div>
+        <div class="grid-item">🥲</div>
+        <div class="grid-item">🥲</div>
+        <div class="grid-item">🥲</div>
+
+
+
+    </div>
+
+</body>
+
+</html>

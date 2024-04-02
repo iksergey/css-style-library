@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap">
+    <title>Подписка на закрытый канал</title>
+
+    <!-- Стили для элементов страницы -->
+    <style>
+        body {
+            /* Используется шрифт Montserrat для текста внутри body */
+            font-family: 'Montserrat', sans-serif;
+            /* Отображение элементов в строку */
+            display: flex;
+            /* Выравнивание элементов по центру по горизонтали */
+            justify-content: center;
+            /* Цвет фона */
+            background-color: #f4f4f4;
+            /* Высота равна 100% высоты видимой области */
+            height: 100vh;
+            /* Выравнивание элементов по центру по вертикали */
+            align-items: center;
+        }
+
+        .card {
+            /* Ширина карточки */
+            width: 300px;
+            /* Цвет фона карточки */
+            background-color: #fff;
+            /* Радиус скругления углов карточки */
+            border-radius: 10px;
+            /* Тень карточки */
+            box-shadow: 0 5px 5px #0000001a;
+            /* Внутренний отступ карточки */
+            padding: 5px;
+            /* Внешний отступ карточки */
+            margin: 5px;
+            /* Отображение элементов внутри карточки в строку */
+            display: flex;
+            /* Направление элементов внутри карточки - столбец */
+            flex-direction: column;
+            /* Выравнивание элементов по центру внутри карточки */
+            align-items: center;
+            /* Максимальная ширина карточки */
+            max-width: 200px;
+        }
+
+        .card h2 {
+            /* Внутренний отступ для заголовка h2 */
+            margin: 5px;
+            /* Выравнивание текста заголовка по центру */
+            text-align: center;
+        }
+
+
+        .price {
+            /* Размер шрифта цены */
+            font-size: 20px;
+            /* Жирное начертание для цены */
+            font-weight: bold;
+        }
+
+
+        .button {
+            /* Цвет фона кнопки */
+            background-color: #4CAF50;
+            /* Цвет текста кнопки */
+            color: white;
+            /* Внутренний отступ кнопки */
+            padding: 5px 20px;
+            /* Выравнивание текста по центру */
+            text-align: center;
+            /* Внешний отступ кнопки */
+            margin: 5px 20px;
+            /* Отсутствие подчеркивания у ссылки */
+            text-decoration: none;
+            /* Размер шрифта кнопки */
+            font-size: 20px;
+            /* Радиус скругления углов кнопки */
+            border-radius: 10px;
+            /* Плавное изменение цвета фона при наведении */
+            transition: background-color 0.2s linear;
+        }
+
+        .button:hover {
+            /* Изменение цвета фона кнопки при наведении */
+            background-color: #37873b;
+        }
+
+        ul {
+            /* Удаление маркеров списка */
+            list-style: none;
+            /* Внешний отступ списка */
+            margin: 0 0 10px 0;
+            /* Удаление внутренних отступов у списка */
+            padding: 0;
+            /* Выравнивание текста по центру */
+            text-align: center;
+        }
+
+        li {
+            /* Внешний отступ элементов списка */
+            margin: 5px 0;
+            /* Используемый шрифт для элементов списка */
+            font-family: 'Roboto Mono', monospace;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                /* Изменение направления отображения элементов при ширине экрана до 768px */
+                flex-direction: column;
+                /* Выравнивание элементов по центру при изменении направления */
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="card">
+        <h2>Базовая подписка</h2>
+        <ul>
+            <li>✅ Бонус 1</li>
+            <li>❎ Бонус 2</li>
+            <li>❎ Бонус 3</li>
+        </ul>
+        <div class="price">&#8381; 199/месяц</div>
+        <a href="#" class="button">Подписаться</a>
+    </div>
+
+    <div class="card">
+        <h2>Продвинутая подписка</h2>
+        <ul>
+            <li>✅ Бонус 1</li>
+            <li>✅ Бонус 2</li>
+            <li>❎ Бонус 3</li>
+        </ul>
+        <div class="price">&#8381; 299/месяц</div>
+        <a href="#" class="button">Подписаться</a>
+    </div>
+
+    <div class="card">
+        <h2>Премиум подписка</h2>
+        <ul>
+            <li>✅ Бонус 1</li>
+            <li>✅ Бонус 2</li>
+            <li>✅ Бонус 3</li>
+        </ul>
+        <div class="price">&#8381; 599/месяц</div>
+        <a href="#" class="button">Подписаться</a>
+    </div>
+
+</body>
+
+</html>

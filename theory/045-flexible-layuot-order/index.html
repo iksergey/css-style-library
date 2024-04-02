@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Цвета</title>
+    <style>
+        .contrast-container {
+            display: inline-flex;
+            flex-direction: column;
+            border: 5px solid blueviolet
+        }
+
+        .color-box {
+            width: 100px;
+            flex-basis: 60px;
+            padding: 10px;
+            margin: 1px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            color: white;
+            font-weight: bold;
+            height: 50px;
+        }
+
+        .color1 {
+            background-color: blue;
+            order: 2;
+        }
+
+        .color2 {
+            background-color: #e74c3c;
+            order: 3;
+        }
+
+        .color3 {
+            background-color: #2ecc71;
+        }
+
+        .color4 {
+            background-color: #f39c12;
+        }
+
+        .color5 {
+            background-color: #9b59b6;
+        }
+
+        .color6 {
+            background-color: #1abc9c;
+
+        }
+
+        .color7 {
+            background-color: #e67e22;
+            order: 0;
+        }
+
+        .color8 {
+            background-color: #34495e;
+            order: -1;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="contrast-container">
+        <h1 class="color-box color1">#0000ff</h1>
+        <h1 class="color-box color2">#e74c3c</h1>
+        <h1 class="color-box color3">#2ecc71</h1>
+        <h1 class="color-box color4">#f39c12</h1>
+        <h1 class="color-box color5">#9b59b6</h1>
+        <h1 class="color-box color6">#1abc9c</h1>
+        <h1 class="color-box color7">#e67e22</h1>
+        <h1 class="color-box color8">#34495e</h1>
+    </div>
+
+</body>
+
+</html>

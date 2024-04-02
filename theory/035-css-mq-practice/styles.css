@@ -1,0 +1,42 @@
+body {
+    background-color: #f1f1f1;
+    font-size: 16px;
+    font-family: 'Arial', sans-serif;
+}
+
+.header {
+    text-align: center;
+}
+
+.main-content {
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+.header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+}
+
+.main-content {
+    padding: 20px;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}

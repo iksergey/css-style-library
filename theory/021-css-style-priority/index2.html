@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Простое объединение (пробел) */
+        .section div {
+            border: 2px solid red;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        /* Общий селектор (,) */
+        ul,
+        ol {
+            color: green;
+        }
+
+        /* Дочерний селектор (>) */
+        .nav>ul {
+            background-color: yellow;
+        }
+    </style>
+    <title>Комбинирование селекторов</title>
+</head>
+
+<body>
+
+    <div class="section">
+        <div>
+            <p>Этот абзац находится внутри div, который в свою очередь находится внутри section.</p>
+        </div>
+        <div>
+            <p>Ещё один абзац внутри div внутри section.</p>
+        </div>
+    </div>
+
+    <div class="nav">
+        <ul>
+            <li>Пункт 1</li>
+            <li>Пункт 2</li>
+        </ul>
+    </div>
+
+    <div class="nav">
+        <ul>
+            <li>Другой пункт 1</li>
+            <li>Другой пункт 2</li>
+        </ul>
+    </div>
+
+    <ol>
+        <li>Нумерованный пункт 1</li>
+        <li>Нумерованный пункт 2</li>
+    </ol>
+
+</body>
+
+</html>

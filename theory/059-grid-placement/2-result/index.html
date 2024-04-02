@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .container {
+            background-color: #708090;
+            height: 97vh;
+            display: grid;
+            gap: 10px;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+        }
+
+        .item {
+            background-color: #9f8e79;
+            font-size: 70px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .teacher {
+            background-color: hsl(34, 78%, 91%);
+            /* grid-column: span 2; */
+            grid-column-start: 1;
+            grid-column-end: 3;
+            /* dev tools */
+        }
+
+        .scientist {
+            grid-column: span 2;
+            grid-row-start: 2;
+            grid-row-end: 3;
+            grid-column-start: 1;
+            grid-column-end: 3;
+            /* grid-area: 2/1/3/3; */
+        }
+
+        .programmer {
+            background-color: darkblue;
+            grid-row: span 2;
+        }
+    </style>
+    <title>grid-placement</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item teacher">👨🏼‍🏫</div>
+        <div class="item scientist">👩🏼‍🔬</div>
+        <div class="item programmer">👨🏼‍💻</div>
+    </div>
+</body>
+
+</html>

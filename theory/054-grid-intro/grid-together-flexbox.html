@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(3, 100px);
+            gap: 10px;
+            padding: 20px;
+            background-color: #ffffff;
+        }
+
+        .grid-item {
+            background-color: #ff9999;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .item1 {
+            grid-column: span 2;
+            grid-row: span 2;
+            display: flex;
+        }
+
+        .item1 .flex-column {
+            flex: 1;
+            margin: 0 5px;
+            background-color: #406f87;
+            border-radius: 10px;
+        }
+
+        .item2 {
+            grid-column: span 1;
+            grid-row: span 2;
+        }
+
+        .item3 {
+            grid-column: span 1;
+            grid-row: span 1;
+        }
+
+        .item4 {
+            grid-column: span 1;
+            grid-row: span 1;
+        }
+
+        .item5 {
+            grid-column: span 2;
+            grid-row: span 1;
+        }
+
+        .item6 {
+            grid-column: span 1;
+            grid-row: span 2;
+        }
+
+        .item7 {
+            grid-column: span 2;
+            grid-row: span 1;
+        }
+
+        .item8 {
+            grid-column: span 1;
+            grid-row: span 2;
+        }
+
+        .item9 {
+            grid-column: span 2;
+            grid-row: span 1;
+        }
+
+        .item10 {
+            grid-column: span 2;
+            grid-row: span 1;
+        }
+    </style>
+    <title>grid + flexbox</title>
+
+</head>
+
+<body>
+    <div class="grid-container">
+        <div class="grid-item item1">
+            <div class="flex-column"></div>
+            <div class="flex-column"></div>
+            <div class="flex-column"></div>
+        </div>
+        <div class="grid-item item2"></div>
+        <div class="grid-item item3"></div>
+        <div class="grid-item item4"></div>
+        <div class="grid-item item5"></div>
+        <div class="grid-item item6"></div>
+        <div class="grid-item item8"></div>
+        <div class="grid-item item7"></div>
+        <div class="grid-item item9"></div>
+        <div class="grid-item item10"></div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Width</title>
+    <style>
+        .flex-container {
+            display: flex;
+            background: lightgrey;
+            padding: 10px;
+        }
+
+        .item {
+            /* flex-basis: 120px; */
+            /* Запрещено расти*/
+            /* flex-grow: 0; */
+            /* Разрешено расти */
+            /* flex-grow: 1; */
+
+            /* Запрещено уменьшаться */
+            /* flex-shrink: 0; */
+            /* Разрешено уменьшаться */
+            /* flex-shrink: 1; */
+            margin: 5px;
+            padding: 5px;
+            background-color: bisque;
+            border: 2px solid black;
+            /* flex: 1 0 120px; */
+            /* flex: 1 1 0; */
+            flex: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flex-container">
+        <p class="item">Далеко-далеко</p>
+        <p class="item">коварных всемогущая</p>
+        <p class="item">подпоясал агентство</p>
+        <!-- <p class="item">несколько&nbsp;на берегу.</p> -->
+    </div>
+</body>
+
+</html>

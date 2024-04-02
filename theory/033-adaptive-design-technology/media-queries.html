@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Адаптивное Меню</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        p {
+            margin: 10px;
+        }
+
+        .header {
+            background-color: #333;
+            color: #fff;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .nav {
+            background-color: #555;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .nav a {
+            color: #fff;
+            text-decoration: none;
+            display: inline-block;
+            padding: 8px;
+            margin-right: 10px;
+        }
+
+        .menu-icon {
+            display: none;
+            text-align: right;
+            font-size: 30px;
+            cursor: pointer;
+        }
+
+        @media screen and (max-width: 400px) {
+            .menu-icon {
+                display: block;
+            }
+
+            .nav {
+                display: none;
+            }
+
+            .nav.show {
+                display: block;
+            }
+
+            .nav a {
+                display: block;
+                margin: 5px 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <a href="#">Главная</a>
+        <a href="#">О нас</a>
+        <a href="#">Услуги</a>
+        <a href="#">Контакты</a>
+    </div>
+    <div class="header">
+        <span class="menu-icon" onclick="toggleNav()">&#9776;</span>
+        <h1>Призыв к действию</h1>
+    </div>
+    <div>
+        <p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Пор безопасную буквоград
+            родного гор его власти себя дороге, ручеек необходимыми за реторический диких что предупредила приставка
+            лучше деревни? То!</p>
+        <p>Гор рукописи текстов точках, lorem переулка вопроса вдали семантика? Напоивший наш до злых. Океана языком
+            буквенных, своих рекламных живет текст переулка, вдали использовало наш лучше свой! Взгляд которое выйти
+            пояс.</p>
+        <p>Предупреждал жизни решила семь послушавшись большой переулка рекламных ему гор предложения грамматики меня
+            безорфографичный что точках, толку рыбного пор всеми, там океана! Рыбного не несколько собрал. Даль журчит
+            обеспечивает коварных?</p>
+        <p>Маленькая залетают она рукопись скатился. Своего заголовок вдали оксмокс власти, предложения рекламных.
+            Предложения она, раз не оксмокс города домах переписывается коварных речью о продолжил напоивший решила
+            всеми, лучше взгляд там.</p>
+        <p>Текста взгляд подпоясал безопасную собрал, ручеек буквоград то которой дорогу единственное вопрос на берегу
+            если там жизни заманивший встретил которое родного напоивший путь пунктуация деревни злых, свое но
+            семантика. Его, курсивных.</p>
+    </div>
+
+
+    <script>
+        function toggleNav() {
+            var nav = document.querySelector('.nav');
+            nav.classList.toggle('show');
+        }
+    </script>
+
+</body>
+
+</html>

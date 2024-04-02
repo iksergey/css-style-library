@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Width</title>
+    <style>
+        .flex-container {
+            display: flex;
+            background: lightgrey;
+            gap: 10px;
+        }
+
+        .item {
+            margin: 5px;
+            padding: 0 10px;
+            background-color: bisque;
+            border: 2px solid black;
+        }
+
+        .item-width {
+            width: 80px;
+        }
+
+        .item-flex-basis {
+            flex-basis: 100px;
+            width: 80px;
+        }
+
+        .item-min-width {
+            /* Максимальная ширина всего содержимого */
+            /* max-width: 180px; */
+            /* flex-basis: 200px; */
+            /* width: 80px; */
+            /* flex-basis: 140px; */
+
+            min-width: 120px;
+            max-width: 140px;
+            /* flex-basis: 100px; */
+            /* width: 80px; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flex-container">
+        <p class="item">Далеко-далеко, за словесными.</p>
+        <p class="item">Ipsum, коварных всемогущая!</p>
+        <p class="item">Даль, подпоясал агентство?</p>
+        <!-- <p class="item">Журчит, несколько&nbsp;на берегу.</p> -->
+    </div>
+    <hr />
+
+    <div class="flex-container">
+        <p class="item item-width">Далеко-далеко, за словесными.</p>
+        <p class="item item-width">Ipsum, коварных всемогущая!</p>
+        <p class="item item-width">Даль, подпоясал агентство?</p>
+        <!-- <p class="item item-width">Журчит, несколько&nbsp;на берегу.</p> -->
+    </div>
+    <hr />
+
+    <div class="flex-container">
+        <p class="item item-flex-basis">Далеко-далеко, за словесными.</p>
+        <p class="item item-flex-basis">Ipsum, коварных всемогущая!</p>
+        <p class="item item-flex-basis">Даль, подпоясал агентство?</p>
+        <!-- <p class="item item-flex-basis">Журчит, несколько&nbsp;на берегу.</p> -->
+    </div>
+    <hr />
+
+    <div class="flex-container">
+        <p class="item item-min-width">Далеко-далеко, за словесными.</p>
+        <p class="item item-min-width">Ipsum, коварных всемогущая!</p>
+        <p class="item item-min-width">Даль, подпоясал агентство?</p>
+        <!-- <p class="item item-min-width">Журчит, несколько&nbsp;на берегу.</p> -->
+    </div>
+    <hr />
+</body>
+
+</html>

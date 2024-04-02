@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тестовый сайт</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Заголовок страницы</h1>
+    </header>
+
+    <main>
+        <div>
+            <form id="quizForm">
+                <label>
+                    Цвет фона в блоке заголовка (header)
+                    <input type="text" id="answer1" placeholder="Например #123456">
+                </label>
+
+                <br>
+
+                <label>
+                    Цвет текста в блоке заголовка (header)
+                    <input type="text" id="answer2" placeholder="Например #123456">
+                </label>
+
+                <br>
+
+                <label>
+                    Цвет фона кнопки (button)
+                    <input type="text" id="answer3" placeholder="Например #123456">
+                </label>
+
+                <br>
+
+                <label>
+                    Цвет фона блока основного содержимого (main div)
+                    <input type="text" id="answer4" placeholder="Например #123456">
+                </label>
+
+                <br>
+
+                <label>
+                    Какой тэг используется для текста вопросов
+                    <input type="text" id="answer5" placeholder="Например TextBox">
+                </label>
+
+                <br>
+
+                <p>
+                    <button type="button" onclick="checkAnswers()">Проверить</button>
+                </p>
+            </form>
+
+            <div id="result" class="result">Результат: 0 из 5 ❎</div>
+
+            <script src="script.js"></script>
+        </div>
+    </main>
+
+    <footer>
+        <p>© <a href="http://ksergey.ru">ksergey.ru</a></p>
+    </footer>
+</body>
+
+</html>

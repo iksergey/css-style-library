@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>grid vs flexbox</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            margin: 10px;
+            padding: 0;
+        }
+
+        .grid-section {
+            border: 2px solid #000;
+            padding: 20px;
+            margin: 10px;
+        }
+
+        .flex-section {
+            border: 2px solid #000;
+            padding: 20px;
+        }
+
+        .grid-example {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 10px;
+        }
+
+
+        .grid-example div {
+            background-color: lightblue;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .flex-example div {
+            background-color: lightblue;
+            text-align: center;
+            flex-basis: 100px;
+            padding: 20px;
+            margin: 10px;
+        }
+
+        .flex-example {
+            display: flex;
+            flex-wrap: wrap;
+            /* justify-content: space-around; */
+            /* justify-content: flex-start; */
+        }
+
+        h2 {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="grid-section">
+            <h2>Grid</h2>
+            <div class="grid-example">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>4</div>
+                <div>5</div>
+                <div>6</div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="flex-section">
+                <h2>Flexbox</h2>
+                <div class="flex-example">
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>
+                    <div>4</div>
+                    <div>5</div>
+                    <div>6</div>
+                    <div>6</div>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>

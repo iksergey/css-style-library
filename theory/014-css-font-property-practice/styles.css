@@ -7,22 +7,41 @@ p {
 }
 
 .task-bold {
-    font-weight: 200;
+    font-weight: bold;
+    padding: 2.5em;
+    margin: 2em;
 }
 
-.task-size {}
+.task-size {
+    font-size: 20px;
+}
 
-.task-center {}
+.task-center {
+    text-align: center;
+}
 
-.task-monospace {}
+.task-monospace {
+    font-family: monospace;
+}
 
-.task-color {}
+.task-color {
+    color: red;
+}
 
-.task-complex {}
+.task-complex {
+    font-weight: bold;
+    text-align: right;
+    color:green;
+}
 
-.task-times-new-roman {}
+.task-times-new-roman {
+    font-family: 'Times New Roman', Times, serif;
+}
 
-.task-large-blue {}
+.task-large-blue {
+    font-size: 20px;
+    color: blue;
+}
 
 .task-justify {}
 

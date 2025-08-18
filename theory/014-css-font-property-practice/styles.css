@@ -6,7 +6,9 @@ p {
     background-color: #ccc;
 }
 
-.task-bold {}
+.task-bold {
+    font-weight: 200;
+}
 
 .task-size {}
 

@@ -40,3 +40,24 @@ a:hover {
     color: #0056b3;
     text-decoration: underline;
 }
+
+@media (min-width: 0px) and (max-width: 500px) {
+    body {
+        background-color: #ff8b94;
+    }
+}
+@media (min-width: 501px) and (max-width: 1000px) {
+    body {
+        background-color: #61a0e7;
+    }
+}
+@media (min-width: 1001px) and (max-width: 1500px) {
+    body {
+        background-color: #b19cdc;
+    }
+}
+@media (min-width: 1501px) and (max-width: 2000px) {
+    body {
+        background-color: #ffcc97;
+    }
+}

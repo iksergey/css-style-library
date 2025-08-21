@@ -15,11 +15,24 @@
         body {
             /* Используется шрифт Montserrat для текста внутри body */
             font-family: 'Montserrat', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            gap: 10px;
+            background: linear-gradient(45deg, aqua, green, blue);
         }
 
         .card {
             /* Цвет фона карточки */
-            background-color: #fff;
+            padding: 50px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            border-radius: 20px;
+            box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.3);
+           
         }
 
         .card h2 {
@@ -33,22 +46,56 @@
             font-size: 20px;
             /* Жирное начертание для цены */
             font-weight: bold;
+            padding: 10px;
+            margin: 40px 0 40px 0;
+            text-align: center;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+            box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.3);
+
         }
 
 
         .button {
             /* Цвет фона кнопки */
             /* background-color: #4CAF50; */
+            display: flex;
+            text-decoration: none;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            padding: 10px;
+            border-radius: 10px;
+            text-align: center;
+            font-weight: 600;
+            transition: 0.2s;
+            color: black;
+            font-size: 16pt;
+        }
+        .card:hover {
+            transform: scale(1.1);
+            z-index: 2;
         }
 
         .button:hover {
             /* Изменение цвета фона кнопки при наведении */
-            background-color: #37873b;
+            transform: scale(1.1);
+            box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.3);
         }
 
         ul {
             /* Удаление маркеров списка */
             list-style: none;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            padding: 10px;
+            border-radius: 10px;
         }
 
         li {
@@ -62,7 +109,10 @@
                 flex-direction: column;
                 /* Выравнивание элементов по центру при изменении направления */
                 align-items: center;
+                padding-top:100%;
+               
             }
+            
         }
     </style>
 </head>

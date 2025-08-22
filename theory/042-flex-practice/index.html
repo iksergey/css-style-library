@@ -11,6 +11,22 @@
             margin: 0;
             padding: 0;
         }
+        .menu {
+            display: flex;
+            list-style-type: none;
+        }
+        .menu > li {
+            background-color:navajowhite;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px;
+            
+        }
+        @media screen and (max-width: 500px) {
+            .menu {
+                columns: 2;
+            }
+        }
     </style>
     <title>Flex-список меню</title>
 </head>

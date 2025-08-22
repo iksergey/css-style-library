@@ -1,3 +1,19 @@
+* {
+    text-align:center;
+}
+
 body {
     background-color: cornsilk
+}
+p {
+    color:blue;
+}
+.item {
+    font-size: 30px;
+}
+#demo-selector {
+    color:red;
+}
+li[value="7"]{
+    color:darkblue
 }

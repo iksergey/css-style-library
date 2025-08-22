@@ -1,38 +1,31 @@
 <!DOCTYPE html>
-<html lang="ru">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Шахматная доска</title>
+    <title>Chest</title>
     <style>
-        .chessboard {
+        .white {
+            width: 50opx;
+            height: 50px;
+            background-color:bisque
+        }
+        .black {
+            width: 50opx;
+            height: 50px;
+            background-color: brown;
+        }
+        .desk {
             display: grid;
             grid-template-rows: repeat(8, 50px);
             grid-template-columns: repeat(8, 50px);
             width: 400px;
-        }
 
-        .square {
-            width: 50opx;
-            height: 50px;
-        }
-
-        .white {
-            background-color: #eae0d0;
-        }
-
-        .black {
-            background-color: #594a3d;
         }
     </style>
 </head>
-
 <body>
-    <div class="chessboard">
-
-        <!-- ((div.square.white+div.square.black)*4+{}+(div.square.black+div.square.white)*4+{})*4 -->
-
+    <div class="desk">
         <div class="square white"></div>
         <div class="square black"></div>
         <div class="square white"></div>
@@ -41,7 +34,7 @@
         <div class="square black"></div>
         <div class="square white"></div>
         <div class="square black"></div>
-
+        
         <div class="square black"></div>
         <div class="square white"></div>
         <div class="square black"></div>
@@ -50,7 +43,7 @@
         <div class="square white"></div>
         <div class="square black"></div>
         <div class="square white"></div>
-
+        
         <div class="square white"></div>
         <div class="square black"></div>
         <div class="square white"></div>
@@ -59,7 +52,7 @@
         <div class="square black"></div>
         <div class="square white"></div>
         <div class="square black"></div>
-
+        
         <div class="square black"></div>
         <div class="square white"></div>
         <div class="square black"></div>
@@ -68,7 +61,7 @@
         <div class="square white"></div>
         <div class="square black"></div>
         <div class="square white"></div>
-
+        
         <div class="square white"></div>
         <div class="square black"></div>
         <div class="square white"></div>
@@ -77,7 +70,7 @@
         <div class="square black"></div>
         <div class="square white"></div>
         <div class="square black"></div>
-
+        
         <div class="square black"></div>
         <div class="square white"></div>
         <div class="square black"></div>
@@ -86,7 +79,7 @@
         <div class="square white"></div>
         <div class="square black"></div>
         <div class="square white"></div>
-
+        
         <div class="square white"></div>
         <div class="square black"></div>
         <div class="square white"></div>
@@ -95,7 +88,7 @@
         <div class="square black"></div>
         <div class="square white"></div>
         <div class="square black"></div>
-
+        
         <div class="square black"></div>
         <div class="square white"></div>
         <div class="square black"></div>
@@ -104,11 +97,7 @@
         <div class="square white"></div>
         <div class="square black"></div>
         <div class="square white"></div>
-
-
-
-
+        
     </div>
 </body>
-
 </html>

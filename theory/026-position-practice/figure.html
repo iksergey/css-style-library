@@ -7,11 +7,29 @@
     <title>Document</title>
 
     <style>
+        body {
+            background-color: black;    
+        }
         .circle {
-            width: 100px;
-            height: 100px;
-            background-color: blue;
+            width: 150px;
+            height: 150px;
+            left: 50%;
+            top: 50%;
+            background-color: white;
             border-radius: 50%;
+            position: absolute;
+            transform: translate(-50%, -50%);
+            z-index: 2;
+        }
+        .rectagle {
+            width: 400px;
+            height: 200px;
+            left: 50%;
+            top: 50%;
+            background-color: red;
+            position: absolute;
+            z-index: 1;
+            transform: translate(-50%, -50%);
         }
     </style>
 </head>
@@ -19,6 +37,7 @@
 <body>
 
     <div class="circle"></div>
+    <div class="rectagle"></div>
 
 </body>
 

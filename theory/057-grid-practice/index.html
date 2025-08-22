@@ -16,6 +16,20 @@
         /* .fixed {} */
 
         /* .flexible {} */
+        .container {
+            display: grid;
+            grid-template-columns: 300px auto minmax(200px, 300px);
+            grid-template-rows: 100px 100px 100px 70px;
+            gap:10px
+        }
+        .item {
+            background-color: #000;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
     </style>
     <title>Grid Layout</title>
 </head>
